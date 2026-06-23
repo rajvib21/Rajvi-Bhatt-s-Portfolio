@@ -140,7 +140,7 @@ const S = {
     fontFamily: "'Space Mono',monospace",
     fontSize: '0.75rem', fontWeight: 700,
     letterSpacing: '0.04em', textDecoration: 'none',
-    textTransform: 'uppercase', transition: 'all 0.2s ease', cursor: 'pointer',
+    textTransform: 'uppercase', transition: 'all 0.2s ease', 
     cursor: 'pointer',
     outline: 'none',
   },
