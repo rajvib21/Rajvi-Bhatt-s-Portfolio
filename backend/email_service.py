@@ -8,6 +8,7 @@ Google App Password setup:
   4. Paste it into your .env as GMAIL_APP_PASSWORD
 """
 
+
 import os
 import logging
 from email.mime.multipart import MIMEMultipart
