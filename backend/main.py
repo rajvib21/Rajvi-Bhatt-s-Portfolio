@@ -9,6 +9,14 @@ Run:
     python main.py
     # or
     uvicorn main:app --reload --host 0.0.0.0 --port 8000
+POST /api/contact   → saves message to SQLite + sends Gmail notification
+GET  /api/health    → health check
+GET  /api/contacts  → list all messages (protect this in production)
+
+Run:
+    python main.py
+    # or
+    uvicorn main:app --reload --host 0.0.0.0 --port 8000
 """
 
 import logging
@@ -34,7 +42,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger("portfolio")
 
-FRONTEND_URL = os.getenv("FRONTEND_URL", "http://localhost:5173")
+FRONTEND_URL = os.getenv("FRONTEND_URL", "http://localhost:2109")
 HOST         = os.getenv("HOST", "0.0.0.0")
 PORT         = int(os.getenv("PORT", 8000))
 
