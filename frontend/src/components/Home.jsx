@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react'
-import HeroImg from '../assets/p.jpeg'   // ← put hero_photo.png in src/assets/
+import HeroImg from '../assest/p.jpeg'   // ← put hero_photo.png in src/assets/
 
 const MARQUEE = [
   'React', 'Python', 'FastAPI', 'LangChain', 'LangGraph', 'RAG',
